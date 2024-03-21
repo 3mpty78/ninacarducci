@@ -5,7 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Portfolio de Nina Carducci, photographe bordelaise spécialisée dans l'évènementiel. Je propose des services de shootings pour vos mariages, concerts ou séminaires d'entreprise." />
+            content="<Portfolio de Nina Carducci, photographe bordelaise spécialisée dans l'évènementiel.> Je propose des services de shootings pour vos mariages, concerts ou séminaires d'entreprise." />
+
+        <!-- Meta réseaux sociaux -->
+        <meta property="og:title" content="Nina Carducci - Photographe" />
+        <meta
+            property="og:description"
+            content="Portfolio de Nina Carducci, photographe bordelaise spécialisée dans l'évènementiel." />
+        <meta
+            property="og:image"
+            content="https://ninacarducci-ten.vercel.app/assets/images/nina.webp" />
+        <meta
+            property="og:url"
+            content="https://ninacarducci-ten.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ninacarducci" />
+        <meta name="twitter:title" content="Nina Carducci - Photographe" />
+        <meta
+            name="twitter:description"
+            content="Portfolio de Nina Carducci, photographe bordelaise spécialisée dans l'évènementiel." />
+        <meta
+            name="twitter:image"
+            content="https://ninacarducci-ten.vercel.app/assets/images/nina.webp" />
+        <!-- Fin meta réseaux sociaux -->
+
         <title>Portfolio - Nina Carducci</title>
         <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
         <link rel="stylesheet" href="./assets/style.css" />
@@ -29,24 +52,38 @@
             crossorigin="anonymous"></script>
         <script src="./assets/maugallery.js"></script>
         <script src="./assets/scripts.js"></script>
+
+        <!-- Script schema.org -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Nina Carducci",
-                "image": "https://github.com/3mpty78/ninacarducci",
-                "@id": "https://github.com/3mpty78/ninacarducci",
-                "url": "https://github.com/3mpty78/ninacarducci",
-                "telephone": "0112233445",
+                "image": "https://ninacarducci-ten.vercel.app/assets/images/nina.webp",
+                "@id": "https://ninacarducci-ten.vercel.app/assets/images/nina.webp",
+                "url": "https://ninacarducci-ten.vercel.app/assets/images/nina.webp",
+                "telephone": "0556677889",
                 "priceRange": "$$",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "1 rue de Lorem Ipsum",
+                    "streetAddress": "68 Avenue Alsace-Lorraine",
                     "addressLocality": "Bordeaux",
                     "addressRegion": "Nouvelle-Aquitaine",
-                    "postalCode": "33000",
+                    "postalCode": "33200",
                     "addressCountry": "FR"
                 }
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday"
+                    ],
+                    "opens": "10:00",
+                    "closes": "19:00"
+                  }
             }
         </script>
     </head>
@@ -165,7 +202,7 @@
                     </p>
                 </div>
             </section>
-            <div id="gallery">
+            <section id="gallery">
                 <h2 class="title">Portfolio</h2>
                 <div class="container py-3">
                     <div class="gallery" style="display: none">
@@ -243,7 +280,7 @@
                     </figure>
                 </div>
             </div>
-            <div id="services">
+            <section id="services">
                 <h2 class="title">Mes services</h2>
                 <div class="container">
                     <div class="service">
@@ -290,7 +327,7 @@
                     </div>
                 </div>
             </div>
-            <div class="quote">
+            <section class="quote">
                 <figure>
                     <blockquote>
                         <p class="quote__text">
@@ -304,7 +341,7 @@
                         - Richard Avedon
                     </figcaption>
                 </figure>
-            </div>
+            </section>
         </main>
 
         <footer id="contact">
